@@ -1,0 +1,31 @@
+﻿# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+client/dist/
+server/dist/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Uploaded documents and local RAG index
+server/uploads/
+server/data/index.json
+server/data/index.json.backup*
+server/test-document.txt
+
+# Backup files
+backup-client-*/
+server/*.backup*
+*.bak
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
